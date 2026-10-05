@@ -1,22 +1,23 @@
 # Lodd
 
-Static single-page app for Norwegian bazaar raffles. Everything lives in the browser (`localStorage`). No server.
+Static single-page raffle app for Norwegian bazaars. Everything lives in the browser (`localStorage`). No server.
 
-## GitHub Pages
+Live (after Pages is enabled): **https://ugur93.github.io/lodd/**
 
-This repo deploys with GitHub Actions to **https://ugur93.github.io/lodd/**
+## Enable GitHub Pages (one time)
 
-1. Repo **Settings → Pages → Source: GitHub Actions**
-2. Push to `main` (or run the **Deploy GitHub Pages** workflow)
-3. Open the Pages URL after the workflow is green
+Open [Settings → Pages](https://github.com/ugur93/lodd/settings/pages) and pick **one**:
 
-The site is a relative-path SPA (`base: ./`), so it also works from a project subdirectory.
+1. **GitHub Actions** (preferred) — Source: GitHub Actions, then re-run the **Deploy GitHub Pages** workflow.
+2. **Branch** — Source: Deploy from a branch, Branch: `main`, Folder: `/docs`.
+
+After that the site is at https://ugur93.github.io/lodd/
 
 ## Local
 
 ```sh
 npm install
-npm run build:pages
+npm run build
 ```
 
-Output is `dist-pages/` (including `404.html` and `.nojekyll` for GitHub Pages).
+Output is `dist-pages/`.
