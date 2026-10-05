@@ -1,0 +1,27 @@
+{
+  "name": "lodd",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config vite.pages.config.ts",
+    "build": "vite build --config vite.pages.config.ts && node scripts/pages-postbuild.mjs",
+    "build:pages": "npm run build",
+    "preview": "vite preview --config vite.pages.config.ts"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
+    "@tailwindcss/vite": "^4.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.510.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^5.7.0",
+    "vite": "^8.2.0",
+    "zustand": "^5.0.0"
+  }
+}
